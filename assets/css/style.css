@@ -1,0 +1,16 @@
+html body {
+
+}
+
+header {
+    display:flex;
+    flex-wrap:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 139, 148);
+    color: black;
+}
+
+.t {
+    color:rgb(255, 255, 255)
+}
