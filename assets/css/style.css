@@ -1,6 +1,14 @@
 :root {
+    --smol-size: 20px;
     --mid-size: 50px;
+    --prim-color: rgb(231, 232, 245);
+    --accent-color: rgba(224, 242, 253, 0.829);
 
+
+}
+
+body {
+    background-color: rgba(224, 242, 253, 0.829);
 }
 
 header {
@@ -8,62 +16,100 @@ header {
     flex-wrap: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 139, 148);
+    background-color: rgba(255, 139, 149, 0.466);
+    border-radius: 25px;
     color: black;
     margin: var(--mid-size);
+    border: var(--smol-size);
+    border-color: var(--accent-color);
 }
 
 .t {
-    color: rgb(255, 255, 255)
+    color: var(--accent-color);
 }
 
 h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding:var(--smol-size);
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(191, 186, 255));
+    border-radius: 25px;
 }
 
 a {
+    padding:var(--smol-size);
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .hero {
     margin: -50px var(--mid-size) 0px var(--mid-size);
-    height: 500px;
+    height: 300px;
+    border: 3px solid var(--prim-color);
     background-size: cover;
     background-position: center;
     background-image: url(https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
 }
 
+.sub {
+    font-size: 65;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    
+
+}
+
 main {
-    margin:0px 400px;
+    margin: 0px 400px;
+    font-size: 30px;
+    background-color: var(--prim-color);
+    border: 3px;
+    border-color: rgb(207, 207, 247);
 }
 
 .content {
     display: flex;
     padding: var(--mid-size);
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 section h2 {
     border-right: 5px solid black;
     font-size: 75px;
     text-align: end;
-    display:flex
+    display: flex
 }
 
-article, figure, div {
+article,
+figure,
+div {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    flex: 1;
-    margin-left:5px;
+    margin-left: 5px;
 }
 
 .images {
-padding: 5px;
+    padding: 5px;
+    width: 55%;
+    height: 100px;
+    flex-basis: 50%;
+    flex: 1em;
+    margin: .5em;
 }
 
-article ul li {
+#hori {
+    padding: 5px;
+    width: 100%;
+    height: 500px;
+    flex-basis: 100%;
+    flex: 1em;
+}
+
+.list li {
     display: inline;
+    justify-content: space-around;
 }
