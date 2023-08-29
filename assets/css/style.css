@@ -3,25 +3,22 @@
     --mid-size: 50px;
     --prim-color: rgb(231, 232, 245);
     --accent-color: rgba(224, 242, 253, 0.829);
-
-
 }
 
 body {
-    background-color: rgba(224, 242, 253, 0.829);
+    background-color: var(--accent-color);
 }
 
 header {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 139, 149, 0.466);
-    border-radius: 25px;
+    border-radius: 45px;
     color: black;
     margin: var(--mid-size);
-    border: var(--smol-size);
-    border-color: var(--accent-color);
+    border: 3px solid var(--accent-color);
 }
 
 .t {
@@ -32,43 +29,43 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    padding:var(--smol-size);
+    padding: var(--smol-size);
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(191, 186, 255));
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(191, 186, 255));
     border-radius: 25px;
 }
 
 a {
-    padding:var(--smol-size);
+    padding: var(--smol-size);
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: var(--smol-size);
 }
 
 .hero {
-    margin: -50px var(--mid-size) 0px var(--mid-size);
+    position: relative;
+    margin: -50px 20px 0px 20px;
     height: 300px;
     border: 3px solid var(--prim-color);
     background-size: cover;
     background-position: center;
     background-image: url(https://images.unsplash.com/photo-1504253163759-c23fccaebb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+    background-color: rgba(255, 153, 140, 0.74);
+
 }
 
 .sub {
-    font-size: 65;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    
-
+    position: absolute;
+    font-size: 65px;
+    bottom: 0;
+    right: 10px;
 }
 
 main {
-    margin: 0px 400px;
-    font-size: 30px;
+    margin: 0px var(--smol-size);
+    font-size: 1.5em;
     background-color: var(--prim-color);
-    border: 3px;
-    border-color: rgb(207, 207, 247);
 }
 
 .content {
@@ -76,40 +73,52 @@ main {
     padding: var(--mid-size);
     margin: 0 auto;
 }
-
+  
 section h2 {
-    border-right: 5px solid black;
-    font-size: 75px;
+    border-right: 5px solid rgba(141, 124, 124, 0.438);
+    padding: 25px;
+    font-size: var(--mid-size);
     text-align: end;
-    display: flex
+    width: 14%;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-article,
-figure,
-div {
+.main-image {
+    flex-basis: 75%;
+    height: 500px;
+    background-image: url(../images/digital-marketing-meeting.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.column {
+    flex-basis: 35%;
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    align-items: center;
+    padding: 5px;
 }
 
-.images {
-    padding: 5px;
-    width: 55%;
-    height: 100px;
-    flex-basis: 50%;
-    flex: 1em;
-    margin: .5em;
-}
-
-#hori {
-    padding: 5px;
+.column img {
     width: 100%;
-    height: 500px;
-    flex-basis: 100%;
-    flex: 1em;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.list li {
+ul li {
     display: inline;
     justify-content: space-around;
+    left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
 }
