@@ -74,7 +74,7 @@ nav a {
     
 }
 
-
+/* body styling */
 main {
     margin: 0px var(--small-size);
     font-size: 1.5em;
@@ -112,6 +112,7 @@ h3 {
     padding-left: 35px;
 }
 
+/* work box styling */
 .main-image {
     flex-basis: 75%;
     height: 500px;
@@ -146,20 +147,20 @@ img:hover {
     opacity: 0.3;
     cursor: pointer;
 }
-
+/* contact styling */
 ul a {
     text-decoration: underline;
     display: inline;
     justify-content: space-around;
     padding-left: 35px;
 }
-
+/* footer styling */
 h4{
     text-align: center;
     text-decoration: wavy;
     font-size: 25px;
 }
-
+/* media queries */
 @media screen and (max-width: 980px) {
 
     header {
