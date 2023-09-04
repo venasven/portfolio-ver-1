@@ -154,6 +154,12 @@ ul a {
     padding-left: 35px;
 }
 
+h4{
+    text-align: center;
+    text-decoration: wavy;
+    font-size: 25px;
+}
+
 @media screen and (max-width: 980px) {
 
     header {
