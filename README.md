@@ -6,7 +6,7 @@ Drafted up a first version of a portfolio to use as I contiune working. I strugg
 
 ## Deployed Application
 
-
+https://venasven.github.io/portfolio-ver-1/
 
 ## Credits
 Discussed assignment with classmates and sought help from tutoring.
